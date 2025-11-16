@@ -2,8 +2,9 @@
 
 namespace LibraryManagementSystemAPI.Repository.Interface
 {
-    public interface IAuthorRepository : IRepository<Author>
+    public interface IAuthorRepository 
     {
-        Task<IEnumerable<Book>> GetBooksByAuthorAsync(Guid authorId);
+        Task<IEnumerable<Author>> GetAllAsyc();
+        Task<Author?> GetByIdAsync(Guid id);
     }
 }

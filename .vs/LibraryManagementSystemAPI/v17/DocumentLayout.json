@@ -3,16 +3,52 @@
   "WorkspaceRootPath": "C:\\Users\\HP\\source\\repos\\LibraryManagementSystemAPI\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{9E648B30-4FAA-4569-AF3D-E0F491E4391D}|LibraryManagementSystemAPI\\LibraryManagementSystemAPI.csproj|c:\\users\\hp\\source\\repos\\librarymanagementsystemapi\\librarymanagementsystemapi\\controllers\\authorscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E648B30-4FAA-4569-AF3D-E0F491E4391D}|LibraryManagementSystemAPI\\LibraryManagementSystemAPI.csproj|solutionrelative:librarymanagementsystemapi\\controllers\\authorscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E648B30-4FAA-4569-AF3D-E0F491E4391D}|LibraryManagementSystemAPI\\LibraryManagementSystemAPI.csproj|c:\\users\\hp\\source\\repos\\librarymanagementsystemapi\\librarymanagementsystemapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E648B30-4FAA-4569-AF3D-E0F491E4391D}|LibraryManagementSystemAPI\\LibraryManagementSystemAPI.csproj|solutionrelative:librarymanagementsystemapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E648B30-4FAA-4569-AF3D-E0F491E4391D}|LibraryManagementSystemAPI\\LibraryManagementSystemAPI.csproj|c:\\users\\hp\\source\\repos\\librarymanagementsystemapi\\librarymanagementsystemapi\\repositories\\bookrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E648B30-4FAA-4569-AF3D-E0F491E4391D}|LibraryManagementSystemAPI\\LibraryManagementSystemAPI.csproj|solutionrelative:librarymanagementsystemapi\\repositories\\bookrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E648B30-4FAA-4569-AF3D-E0F491E4391D}|LibraryManagementSystemAPI\\LibraryManagementSystemAPI.csproj|c:\\users\\hp\\source\\repos\\librarymanagementsystemapi\\librarymanagementsystemapi\\repositories\\genrerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E648B30-4FAA-4569-AF3D-E0F491E4391D}|LibraryManagementSystemAPI\\LibraryManagementSystemAPI.csproj|solutionrelative:librarymanagementsystemapi\\repositories\\genrerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E648B30-4FAA-4569-AF3D-E0F491E4391D}|LibraryManagementSystemAPI\\LibraryManagementSystemAPI.csproj|c:\\users\\hp\\source\\repos\\librarymanagementsystemapi\\librarymanagementsystemapi\\repositories\\authorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E648B30-4FAA-4569-AF3D-E0F491E4391D}|LibraryManagementSystemAPI\\LibraryManagementSystemAPI.csproj|solutionrelative:librarymanagementsystemapi\\repositories\\authorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{9E648B30-4FAA-4569-AF3D-E0F491E4391D}|LibraryManagementSystemAPI\\LibraryManagementSystemAPI.csproj|c:\\users\\hp\\source\\repos\\librarymanagementsystemapi\\librarymanagementsystemapi\\repositories\\interface\\igenrerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9E648B30-4FAA-4569-AF3D-E0F491E4391D}|LibraryManagementSystemAPI\\LibraryManagementSystemAPI.csproj|solutionrelative:librarymanagementsystemapi\\repositories\\interface\\igenrerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9E648B30-4FAA-4569-AF3D-E0F491E4391D}|LibraryManagementSystemAPI\\LibraryManagementSystemAPI.csproj|c:\\users\\hp\\source\\repos\\librarymanagementsystemapi\\librarymanagementsystemapi\\repositories\\interface\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9E648B30-4FAA-4569-AF3D-E0F491E4391D}|LibraryManagementSystemAPI\\LibraryManagementSystemAPI.csproj|solutionrelative:librarymanagementsystemapi\\repositories\\interface\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9E648B30-4FAA-4569-AF3D-E0F491E4391D}|LibraryManagementSystemAPI\\LibraryManagementSystemAPI.csproj|c:\\users\\hp\\source\\repos\\librarymanagementsystemapi\\librarymanagementsystemapi\\data\\librarycontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E648B30-4FAA-4569-AF3D-E0F491E4391D}|LibraryManagementSystemAPI\\LibraryManagementSystemAPI.csproj|solutionrelative:librarymanagementsystemapi\\data\\librarycontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E648B30-4FAA-4569-AF3D-E0F491E4391D}|LibraryManagementSystemAPI\\LibraryManagementSystemAPI.csproj|c:\\users\\hp\\source\\repos\\librarymanagementsystemapi\\librarymanagementsystemapi\\controllers\\bookcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E648B30-4FAA-4569-AF3D-E0F491E4391D}|LibraryManagementSystemAPI\\LibraryManagementSystemAPI.csproj|solutionrelative:librarymanagementsystemapi\\controllers\\bookcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E648B30-4FAA-4569-AF3D-E0F491E4391D}|LibraryManagementSystemAPI\\LibraryManagementSystemAPI.csproj|c:\\users\\hp\\source\\repos\\librarymanagementsystemapi\\librarymanagementsystemapi\\controllers\\genrecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E648B30-4FAA-4569-AF3D-E0F491E4391D}|LibraryManagementSystemAPI\\LibraryManagementSystemAPI.csproj|solutionrelative:librarymanagementsystemapi\\controllers\\genrecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E648B30-4FAA-4569-AF3D-E0F491E4391D}|LibraryManagementSystemAPI\\LibraryManagementSystemAPI.csproj|c:\\users\\hp\\source\\repos\\librarymanagementsystemapi\\librarymanagementsystemapi\\repositories\\interface\\ibookrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E648B30-4FAA-4569-AF3D-E0F491E4391D}|LibraryManagementSystemAPI\\LibraryManagementSystemAPI.csproj|solutionrelative:librarymanagementsystemapi\\repositories\\interface\\ibookrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9E648B30-4FAA-4569-AF3D-E0F491E4391D}|LibraryManagementSystemAPI\\LibraryManagementSystemAPI.csproj|c:\\users\\hp\\source\\repos\\librarymanagementsystemapi\\librarymanagementsystemapi\\repositories\\interface\\iauthorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9E648B30-4FAA-4569-AF3D-E0F491E4391D}|LibraryManagementSystemAPI\\LibraryManagementSystemAPI.csproj|solutionrelative:librarymanagementsystemapi\\repositories\\interface\\iauthorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E648B30-4FAA-4569-AF3D-E0F491E4391D}|LibraryManagementSystemAPI\\LibraryManagementSystemAPI.csproj|c:\\users\\hp\\source\\repos\\librarymanagementsystemapi\\librarymanagementsystemapi\\models\\author.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E648B30-4FAA-4569-AF3D-E0F491E4391D}|LibraryManagementSystemAPI\\LibraryManagementSystemAPI.csproj|solutionrelative:librarymanagementsystemapi\\models\\author.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9E648B30-4FAA-4569-AF3D-E0F491E4391D}|LibraryManagementSystemAPI\\LibraryManagementSystemAPI.csproj|c:\\users\\hp\\source\\repos\\librarymanagementsystemapi\\librarymanagementsystemapi\\models\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -23,56 +59,12 @@
       "RelativeMoniker": "D:0:0:{9E648B30-4FAA-4569-AF3D-E0F491E4391D}|LibraryManagementSystemAPI\\LibraryManagementSystemAPI.csproj|solutionrelative:librarymanagementsystemapi\\data\\seeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9E648B30-4FAA-4569-AF3D-E0F491E4391D}|LibraryManagementSystemAPI\\LibraryManagementSystemAPI.csproj|c:\\users\\hp\\source\\repos\\librarymanagementsystemapi\\librarymanagementsystemapi\\data\\librarycontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9E648B30-4FAA-4569-AF3D-E0F491E4391D}|LibraryManagementSystemAPI\\LibraryManagementSystemAPI.csproj|solutionrelative:librarymanagementsystemapi\\data\\librarycontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9E648B30-4FAA-4569-AF3D-E0F491E4391D}|LibraryManagementSystemAPI\\LibraryManagementSystemAPI.csproj|c:\\users\\hp\\source\\repos\\librarymanagementsystemapi\\librarymanagementsystemapi\\controllers\\genrecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9E648B30-4FAA-4569-AF3D-E0F491E4391D}|LibraryManagementSystemAPI\\LibraryManagementSystemAPI.csproj|solutionrelative:librarymanagementsystemapi\\controllers\\genrecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9E648B30-4FAA-4569-AF3D-E0F491E4391D}|LibraryManagementSystemAPI\\LibraryManagementSystemAPI.csproj|c:\\users\\hp\\source\\repos\\librarymanagementsystemapi\\librarymanagementsystemapi\\controllers\\bookcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9E648B30-4FAA-4569-AF3D-E0F491E4391D}|LibraryManagementSystemAPI\\LibraryManagementSystemAPI.csproj|solutionrelative:librarymanagementsystemapi\\controllers\\bookcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9E648B30-4FAA-4569-AF3D-E0F491E4391D}|LibraryManagementSystemAPI\\LibraryManagementSystemAPI.csproj|c:\\users\\hp\\source\\repos\\librarymanagementsystemapi\\librarymanagementsystemapi\\controllers\\authorscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9E648B30-4FAA-4569-AF3D-E0F491E4391D}|LibraryManagementSystemAPI\\LibraryManagementSystemAPI.csproj|solutionrelative:librarymanagementsystemapi\\controllers\\authorscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9E648B30-4FAA-4569-AF3D-E0F491E4391D}|LibraryManagementSystemAPI\\LibraryManagementSystemAPI.csproj|c:\\users\\hp\\source\\repos\\librarymanagementsystemapi\\librarymanagementsystemapi\\repositories\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9E648B30-4FAA-4569-AF3D-E0F491E4391D}|LibraryManagementSystemAPI\\LibraryManagementSystemAPI.csproj|solutionrelative:librarymanagementsystemapi\\repositories\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9E648B30-4FAA-4569-AF3D-E0F491E4391D}|LibraryManagementSystemAPI\\LibraryManagementSystemAPI.csproj|c:\\users\\hp\\source\\repos\\librarymanagementsystemapi\\librarymanagementsystemapi\\repositories\\genrerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9E648B30-4FAA-4569-AF3D-E0F491E4391D}|LibraryManagementSystemAPI\\LibraryManagementSystemAPI.csproj|solutionrelative:librarymanagementsystemapi\\repositories\\genrerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9E648B30-4FAA-4569-AF3D-E0F491E4391D}|LibraryManagementSystemAPI\\LibraryManagementSystemAPI.csproj|c:\\users\\hp\\source\\repos\\librarymanagementsystemapi\\librarymanagementsystemapi\\repositories\\bookrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9E648B30-4FAA-4569-AF3D-E0F491E4391D}|LibraryManagementSystemAPI\\LibraryManagementSystemAPI.csproj|solutionrelative:librarymanagementsystemapi\\repositories\\bookrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9E648B30-4FAA-4569-AF3D-E0F491E4391D}|LibraryManagementSystemAPI\\LibraryManagementSystemAPI.csproj|c:\\users\\hp\\source\\repos\\librarymanagementsystemapi\\librarymanagementsystemapi\\repositories\\authorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9E648B30-4FAA-4569-AF3D-E0F491E4391D}|LibraryManagementSystemAPI\\LibraryManagementSystemAPI.csproj|solutionrelative:librarymanagementsystemapi\\repositories\\authorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9E648B30-4FAA-4569-AF3D-E0F491E4391D}|LibraryManagementSystemAPI\\LibraryManagementSystemAPI.csproj|c:\\users\\hp\\source\\repos\\librarymanagementsystemapi\\librarymanagementsystemapi\\repositories\\interface\\ibookrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9E648B30-4FAA-4569-AF3D-E0F491E4391D}|LibraryManagementSystemAPI\\LibraryManagementSystemAPI.csproj|solutionrelative:librarymanagementsystemapi\\repositories\\interface\\ibookrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9E648B30-4FAA-4569-AF3D-E0F491E4391D}|LibraryManagementSystemAPI\\LibraryManagementSystemAPI.csproj|c:\\users\\hp\\source\\repos\\librarymanagementsystemapi\\librarymanagementsystemapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9E648B30-4FAA-4569-AF3D-E0F491E4391D}|LibraryManagementSystemAPI\\LibraryManagementSystemAPI.csproj|solutionrelative:librarymanagementsystemapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{9E648B30-4FAA-4569-AF3D-E0F491E4391D}|LibraryManagementSystemAPI\\LibraryManagementSystemAPI.csproj|c:\\users\\hp\\source\\repos\\librarymanagementsystemapi\\librarymanagementsystemapi\\models\\genre.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9E648B30-4FAA-4569-AF3D-E0F491E4391D}|LibraryManagementSystemAPI\\LibraryManagementSystemAPI.csproj|solutionrelative:librarymanagementsystemapi\\models\\genre.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9E648B30-4FAA-4569-AF3D-E0F491E4391D}|LibraryManagementSystemAPI\\LibraryManagementSystemAPI.csproj|c:\\users\\hp\\source\\repos\\librarymanagementsystemapi\\librarymanagementsystemapi\\models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9E648B30-4FAA-4569-AF3D-E0F491E4391D}|LibraryManagementSystemAPI\\LibraryManagementSystemAPI.csproj|solutionrelative:librarymanagementsystemapi\\models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9E648B30-4FAA-4569-AF3D-E0F491E4391D}|LibraryManagementSystemAPI\\LibraryManagementSystemAPI.csproj|c:\\users\\hp\\source\\repos\\librarymanagementsystemapi\\librarymanagementsystemapi\\models\\author.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9E648B30-4FAA-4569-AF3D-E0F491E4391D}|LibraryManagementSystemAPI\\LibraryManagementSystemAPI.csproj|solutionrelative:librarymanagementsystemapi\\models\\author.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9E648B30-4FAA-4569-AF3D-E0F491E4391D}|LibraryManagementSystemAPI\\LibraryManagementSystemAPI.csproj|c:\\users\\hp\\source\\repos\\librarymanagementsystemapi\\librarymanagementsystemapi\\dto\\bookdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -94,7 +86,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 24,
+          "SelectedChildIndex": 15,
           "Children": [
             {
               "$type": "Bookmark",
@@ -150,7 +142,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 18,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\LibraryManagementSystemAPI\\LibraryManagementSystemAPI\\appsettings.json",
               "RelativeDocumentMoniker": "LibraryManagementSystemAPI\\appsettings.json",
@@ -158,12 +150,11 @@
               "RelativeToolTip": "LibraryManagementSystemAPI\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-11-15T21:20:29.347Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-15T21:20:29.347Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 13,
               "Title": "Seeder.cs",
               "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\LibraryManagementSystemAPI\\LibraryManagementSystemAPI\\Data\\Seeder.cs",
               "RelativeDocumentMoniker": "LibraryManagementSystemAPI\\Data\\Seeder.cs",
@@ -171,38 +162,37 @@
               "RelativeToolTip": "LibraryManagementSystemAPI\\Data\\Seeder.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-15T07:18:22.39Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-15T07:18:22.39Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 0,
               "Title": "AuthorsController.cs",
               "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\LibraryManagementSystemAPI\\LibraryManagementSystemAPI\\Controllers\\AuthorsController.cs",
               "RelativeDocumentMoniker": "LibraryManagementSystemAPI\\Controllers\\AuthorsController.cs",
               "ToolTip": "C:\\Users\\HP\\source\\repos\\LibraryManagementSystemAPI\\LibraryManagementSystemAPI\\Controllers\\AuthorsController.cs",
               "RelativeToolTip": "LibraryManagementSystemAPI\\Controllers\\AuthorsController.cs",
-              "ViewState": "AgIAAEkAAAAAAAAAAAAAAFAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-15T06:45:57.192Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "GenreController.cs",
               "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\LibraryManagementSystemAPI\\LibraryManagementSystemAPI\\Controllers\\GenreController.cs",
               "RelativeDocumentMoniker": "LibraryManagementSystemAPI\\Controllers\\GenreController.cs",
               "ToolTip": "C:\\Users\\HP\\source\\repos\\LibraryManagementSystemAPI\\LibraryManagementSystemAPI\\Controllers\\GenreController.cs",
               "RelativeToolTip": "LibraryManagementSystemAPI\\Controllers\\GenreController.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAA4AAAAeAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABAAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-14T15:24:56.119Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 16,
               "Title": "BookDtos.cs",
               "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\LibraryManagementSystemAPI\\LibraryManagementSystemAPI\\DTO\\BookDtos.cs",
               "RelativeDocumentMoniker": "LibraryManagementSystemAPI\\DTO\\BookDtos.cs",
@@ -210,8 +200,7 @@
               "RelativeToolTip": "LibraryManagementSystemAPI\\DTO\\BookDtos.cs",
               "ViewState": "AgIAAAsAAAAAAAAAAAA0wBkAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-14T15:08:32.077Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-14T15:08:32.077Z"
             },
             {
               "$type": "Document",
@@ -221,131 +210,105 @@
               "RelativeDocumentMoniker": "LibraryManagementSystemAPI\\Controllers\\BookController.cs",
               "ToolTip": "C:\\Users\\HP\\source\\repos\\LibraryManagementSystemAPI\\LibraryManagementSystemAPI\\Controllers\\BookController.cs",
               "RelativeToolTip": "LibraryManagementSystemAPI\\Controllers\\BookController.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAAABkAAAAqAAAAAAAAAA==",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAABAAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-14T14:58:51.456Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "LibraryContext.cs",
               "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\LibraryManagementSystemAPI\\LibraryManagementSystemAPI\\Data\\LibraryContext.cs",
               "RelativeDocumentMoniker": "LibraryManagementSystemAPI\\Data\\LibraryContext.cs",
               "ToolTip": "C:\\Users\\HP\\source\\repos\\LibraryManagementSystemAPI\\LibraryManagementSystemAPI\\Data\\LibraryContext.cs",
               "RelativeToolTip": "LibraryManagementSystemAPI\\Data\\LibraryContext.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAzwBQAAAAnAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAYwCQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-14T14:24:06.748Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 10,
               "Title": "IAuthorRepository.cs",
               "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\LibraryManagementSystemAPI\\LibraryManagementSystemAPI\\Repositories\\Interface\\IAuthorRepository.cs",
               "RelativeDocumentMoniker": "LibraryManagementSystemAPI\\Repositories\\Interface\\IAuthorRepository.cs",
               "ToolTip": "C:\\Users\\HP\\source\\repos\\LibraryManagementSystemAPI\\LibraryManagementSystemAPI\\Repositories\\Interface\\IAuthorRepository.cs",
               "RelativeToolTip": "LibraryManagementSystemAPI\\Repositories\\Interface\\IAuthorRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAUAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-14T14:13:18.628Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 9,
               "Title": "IBookRepository.cs",
               "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\LibraryManagementSystemAPI\\LibraryManagementSystemAPI\\Repositories\\Interface\\IBookRepository.cs",
               "RelativeDocumentMoniker": "LibraryManagementSystemAPI\\Repositories\\Interface\\IBookRepository.cs",
               "ToolTip": "C:\\Users\\HP\\source\\repos\\LibraryManagementSystemAPI\\LibraryManagementSystemAPI\\Repositories\\Interface\\IBookRepository.cs",
               "RelativeToolTip": "LibraryManagementSystemAPI\\Repositories\\Interface\\IBookRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-14T14:13:08.299Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Repository.cs",
-              "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\LibraryManagementSystemAPI\\LibraryManagementSystemAPI\\Repositories\\Repository.cs",
-              "RelativeDocumentMoniker": "LibraryManagementSystemAPI\\Repositories\\Repository.cs",
-              "ToolTip": "C:\\Users\\HP\\source\\repos\\LibraryManagementSystemAPI\\LibraryManagementSystemAPI\\Repositories\\Repository.cs",
-              "RelativeToolTip": "LibraryManagementSystemAPI\\Repositories\\Repository.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAAAAgAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-14T14:09:53.109Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "IRepository.cs",
-              "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\LibraryManagementSystemAPI\\LibraryManagementSystemAPI\\Repositories\\Interface\\IRepository.cs",
-              "RelativeDocumentMoniker": "LibraryManagementSystemAPI\\Repositories\\Interface\\IRepository.cs",
-              "ToolTip": "C:\\Users\\HP\\source\\repos\\LibraryManagementSystemAPI\\LibraryManagementSystemAPI\\Repositories\\Interface\\IRepository.cs",
-              "RelativeToolTip": "LibraryManagementSystemAPI\\Repositories\\Interface\\IRepository.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA0AAAAHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-14T14:09:35.077Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
               "Title": "IGenreRepository.cs",
               "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\LibraryManagementSystemAPI\\LibraryManagementSystemAPI\\Repositories\\Interface\\IGenreRepository.cs",
               "RelativeDocumentMoniker": "LibraryManagementSystemAPI\\Repositories\\Interface\\IGenreRepository.cs",
               "ToolTip": "C:\\Users\\HP\\source\\repos\\LibraryManagementSystemAPI\\LibraryManagementSystemAPI\\Repositories\\Interface\\IGenreRepository.cs",
               "RelativeToolTip": "LibraryManagementSystemAPI\\Repositories\\Interface\\IGenreRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-14T12:23:14.771Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 3,
               "Title": "GenreRepository.cs",
               "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\LibraryManagementSystemAPI\\LibraryManagementSystemAPI\\Repositories\\GenreRepository.cs",
               "RelativeDocumentMoniker": "LibraryManagementSystemAPI\\Repositories\\GenreRepository.cs",
               "ToolTip": "C:\\Users\\HP\\source\\repos\\LibraryManagementSystemAPI\\LibraryManagementSystemAPI\\Repositories\\GenreRepository.cs",
               "RelativeToolTip": "LibraryManagementSystemAPI\\Repositories\\GenreRepository.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABEAAAAWAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAoAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-14T12:21:15.112Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 4,
               "Title": "AuthorRepository.cs",
               "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\LibraryManagementSystemAPI\\LibraryManagementSystemAPI\\Repositories\\AuthorRepository.cs",
               "RelativeDocumentMoniker": "LibraryManagementSystemAPI\\Repositories\\AuthorRepository.cs",
               "ToolTip": "C:\\Users\\HP\\source\\repos\\LibraryManagementSystemAPI\\LibraryManagementSystemAPI\\Repositories\\AuthorRepository.cs",
               "RelativeToolTip": "LibraryManagementSystemAPI\\Repositories\\AuthorRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAWAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-14T12:20:43.157Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 2,
               "Title": "BookRepository.cs",
               "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\LibraryManagementSystemAPI\\LibraryManagementSystemAPI\\Repositories\\BookRepository.cs",
               "RelativeDocumentMoniker": "LibraryManagementSystemAPI\\Repositories\\BookRepository.cs",
               "ToolTip": "C:\\Users\\HP\\source\\repos\\LibraryManagementSystemAPI\\LibraryManagementSystemAPI\\Repositories\\BookRepository.cs",
               "RelativeToolTip": "LibraryManagementSystemAPI\\Repositories\\BookRepository.cs",
-              "ViewState": "AgIAAB0AAAAAAAAAAAAAwDcAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-14T12:20:09.114Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 11,
               "Title": "Author.cs",
               "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\LibraryManagementSystemAPI\\LibraryManagementSystemAPI\\Models\\Author.cs",
               "RelativeDocumentMoniker": "LibraryManagementSystemAPI\\Models\\Author.cs",
@@ -358,7 +321,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 17,
               "Title": "AuthorDtos.cs",
               "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\LibraryManagementSystemAPI\\LibraryManagementSystemAPI\\DTO\\AuthorDtos.cs",
               "RelativeDocumentMoniker": "LibraryManagementSystemAPI\\DTO\\AuthorDtos.cs",
@@ -366,12 +329,11 @@
               "RelativeToolTip": "LibraryManagementSystemAPI\\DTO\\AuthorDtos.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAiwAYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-14T11:56:52.154Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-14T11:56:52.154Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 14,
               "Title": "Genre.cs",
               "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\LibraryManagementSystemAPI\\LibraryManagementSystemAPI\\Models\\Genre.cs",
               "RelativeDocumentMoniker": "LibraryManagementSystemAPI\\Models\\Genre.cs",
@@ -379,12 +341,11 @@
               "RelativeToolTip": "LibraryManagementSystemAPI\\Models\\Genre.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-14T11:47:01.732Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-14T11:47:01.732Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 12,
               "Title": "BaseEntity.cs",
               "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\LibraryManagementSystemAPI\\LibraryManagementSystemAPI\\Models\\BaseEntity.cs",
               "RelativeDocumentMoniker": "LibraryManagementSystemAPI\\Models\\BaseEntity.cs",
@@ -392,18 +353,17 @@
               "RelativeToolTip": "LibraryManagementSystemAPI\\Models\\BaseEntity.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-14T11:47:18.141Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-14T11:47:18.141Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\LibraryManagementSystemAPI\\LibraryManagementSystemAPI\\Program.cs",
               "RelativeDocumentMoniker": "LibraryManagementSystemAPI\\Program.cs",
               "ToolTip": "C:\\Users\\HP\\source\\repos\\LibraryManagementSystemAPI\\LibraryManagementSystemAPI\\Program.cs",
               "RelativeToolTip": "LibraryManagementSystemAPI\\Program.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAABQAAABIAAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABgAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-14T08:01:18.536Z",
               "EditorCaption": ""
@@ -431,7 +391,7 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 15,
               "Title": "Book.cs",
               "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\LibraryManagementSystemAPI\\LibraryManagementSystemAPI\\Models\\Book.cs",
               "RelativeDocumentMoniker": "LibraryManagementSystemAPI\\Models\\Book.cs",

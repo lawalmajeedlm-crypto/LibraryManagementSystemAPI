@@ -2,8 +2,9 @@
 
 namespace LibraryManagementSystemAPI.Repository.Interface
 {
-    public interface IGenreRepository : IRepository<Genre>
+    public interface IGenreRepository 
     {
-        Task<IEnumerable<Book>> GetBooksByGenreAsync(Guid genreId);
+        Task<IEnumerable<Genre>> GetAllAsync();
+        Task<Genre?> GetByIdAsync(Guid id);
     }
 }

@@ -5,10 +5,10 @@ using Microsoft.EntityFrameworkCore;
 
 namespace LibraryManagementSystemAPI.Repository
 {
-    public class GenreRepository : Repository<Genre>, IGenreRepository
+    public class GenreRepository 
     {
         private readonly LibraryContext _context;
-        public GenreRepository(LibraryContext context) : base(context)
+        public GenreRepository(LibraryContext context)
         {
             _context = context;
         }

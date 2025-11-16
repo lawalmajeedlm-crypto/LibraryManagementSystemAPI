@@ -1,8 +1,10 @@
-﻿using LibraryManagementSystemAPI.DTO;
+﻿using LibraryManagementSystemAPI.Data;
+using LibraryManagementSystemAPI.DTO;
 using LibraryManagementSystemAPI.Models;
 using LibraryManagementSystemAPI.Repository.Interface;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace LibraryManagementSystemAPI.Controllers
 {
@@ -10,89 +12,117 @@ namespace LibraryManagementSystemAPI.Controllers
     [ApiController]
     public class BookController : ControllerBase
     {
-        private readonly IBookRepository _books;
+        private readonly LibraryContext _context;
 
-        public BookController(IBookRepository books)
+        public BookController(LibraryContext context)
         {
-            _books = books;
+            _context = context;
         }
 
-        // GET: api/books?page=1&pageSize=10&search=keyword
+        // GET: api/books
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Book>>> GetAll([FromQuery] int page = 1, [FromQuery] int pageSize = 10, [FromQuery] string? search = null)
+        public async Task<ActionResult<IEnumerable<Book>>> GetBooks()
         {
-            var (items, total) = await _books.GetPagedAsync(page, pageSize, search);
-
-            Response.Headers.Append("X-Total-Count", total.ToString());
-            return Ok(items);
+            return await _context.Books
+                .Include(b => b.Author)
+                .Include(b => b.Genre)
+                .ToListAsync();
         }
 
         // GET: api/books/{id}
         [HttpGet("{id:guid}")]
-        public async Task<ActionResult<Book>> GetById(Guid id)
+        public async Task<ActionResult<Book>> GetBook(Guid id)
         {
-            var book = await _books.GetDetailedByIdAsync(id);
-            if (book is null) return NotFound();
-            return Ok(book);
+            var book = await _context.Books
+                .Include(b => b.Author)
+                .Include(b => b.Genre)
+                .FirstOrDefaultAsync(b => b.Id == id);
+
+            if (book == null)
+                return NotFound();
+
+            return book;
         }
 
         // POST: api/books
         [HttpPost]
-        public async Task<ActionResult<Book>> Create(Book book)
+        public async Task<ActionResult<Book>> CreateBook(Book book)
         {
-            await _books.AddAsync(book);
-            var saved = await _books.SaveChangesAsync();
-            if (!saved) return StatusCode(500, "Failed to save book.");
-            return CreatedAtAction(nameof(GetById), new { id = book.Id }, book);
+            _context.Books.Add(book);
+            await _context.SaveChangesAsync();
+
+            return CreatedAtAction(nameof(GetBook), new { id = book.Id }, book);
         }
 
         // PUT: api/books/{id}
         [HttpPut("{id:guid}")]
-        public async Task<IActionResult> Update(Guid id, Book book)
+        public async Task<IActionResult> UpdateBook(Guid id, Book book)
         {
-            if (id != book.Id) return BadRequest();
+            if (id != book.Id)
+                return BadRequest();
 
-            _books.Update(book);
-            var saved = await _books.SaveChangesAsync();
-            if (!saved) return StatusCode(500, "Failed to update book.");
+            _context.Entry(book).State = EntityState.Modified;
+
+            try
+            {
+                await _context.SaveChangesAsync();
+            }
+            catch (DbUpdateConcurrencyException)
+            {
+                if (!_context.Books.Any(b => b.Id == id))
+                    return NotFound();
+                else
+                    throw;
+            }
+
             return NoContent();
         }
 
         // DELETE: api/books/{id}
         [HttpDelete("{id:guid}")]
-        public async Task<IActionResult> Delete(Guid id)
+        public async Task<IActionResult> DeleteBook(Guid id)
         {
-            var book = await _books.GetByIdAsync(id);
-            if (book is null) return NotFound();
+            var book = await _context.Books.FindAsync(id);
+            if (book == null)
+                return NotFound();
 
-            _books.Remove(book);
-            var saved = await _books.SaveChangesAsync();
-            if (!saved) return StatusCode(500, "Failed to delete book.");
+            _context.Books.Remove(book);
+            await _context.SaveChangesAsync();
+
             return NoContent();
         }
 
-        // GET: api/books/search?title=xyz
+        // GET: api/books/search?title=keyword
         [HttpGet("search")]
-        public async Task<ActionResult<IEnumerable<Book>>> Search([FromQuery] string title)
+        public async Task<ActionResult<IEnumerable<Book>>> SearchBooks([FromQuery] string title)
         {
-            var results = await _books.FindAsync(b => b.Title.Contains(title));
-            return Ok(results);
+            return await _context.Books
+                .Include(b => b.Author)
+                .Include(b => b.Genre)
+                .Where(b => b.Title.Contains(title))
+                .ToListAsync();
         }
 
         // GET: api/books/by-author/{authorId}
         [HttpGet("by-author/{authorId:guid}")]
-        public async Task<ActionResult<IEnumerable<Book>>> GetByAuthor(Guid authorId)
+        public async Task<ActionResult<IEnumerable<Book>>> GetBooksByAuthor(Guid authorId)
         {
-            var results = await _books.GetByAuthorAsync(authorId);
-            return Ok(results);
+            return await _context.Books
+                .Include(b => b.Author)
+                .Include(b => b.Genre)
+                .Where(b => b.AuthorId == authorId)
+                .ToListAsync();
         }
 
         // GET: api/books/by-genre/{genreId}
         [HttpGet("by-genre/{genreId:guid}")]
-        public async Task<ActionResult<IEnumerable<Book>>> GetByGenre(Guid genreId)
+        public async Task<ActionResult<IEnumerable<Book>>> GetBooksByGenre(Guid genreId)
         {
-            var results = await _books.FindAsync(b => b.GenreId == genreId);
-            return Ok(results);
+            return await _context.Books
+                .Include(b => b.Author)
+                .Include(b => b.Genre)
+                .Where(b => b.GenreId == genreId)
+                .ToListAsync();
         }
     }
 }
