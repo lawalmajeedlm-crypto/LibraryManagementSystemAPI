@@ -15,10 +15,9 @@ internal class Program
             options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
         
-        builder.Services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
-        builder.Services.AddScoped<IBookRepository, BookRepository>();
-        builder.Services.AddScoped<IAuthorRepository, AuthorRepository>();
-        builder.Services.AddScoped<IGenreRepository, GenreRepository>();
+        builder.Services.AddScoped<BookRepository>();
+        builder.Services.AddScoped<AuthorRepository>();
+        builder.Services.AddScoped<GenreRepository>();
 
 
         builder.Services.AddControllers()

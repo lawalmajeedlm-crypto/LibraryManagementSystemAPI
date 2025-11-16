@@ -1,8 +1,10 @@
-﻿using LibraryManagementSystemAPI.DTO;
+﻿using LibraryManagementSystemAPI.Data;
+using LibraryManagementSystemAPI.DTO;
 using LibraryManagementSystemAPI.Models;
 using LibraryManagementSystemAPI.Repository.Interface;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace LibraryManagementSystemAPI.Controllers
 {
@@ -10,70 +12,81 @@ namespace LibraryManagementSystemAPI.Controllers
     [ApiController]
     public class AuthorsController : ControllerBase
     {
-        private readonly IAuthorRepository _authors;
+        private readonly LibraryContext _context;
 
-        public AuthorsController(IAuthorRepository authors)
+        public AuthorsController(LibraryContext context)
         {
-            _authors = authors;
+            _context = context;
         }
 
         // GET: api/authors
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Author>>> GetAll()
+        public async Task<ActionResult<IEnumerable<Author>>> GetAuthors()
         {
-            var authors = await _authors.GetAllAsync();
-            return Ok(authors);
+            return await _context.Authors
+                .Include(a => a.Books)
+                .ToListAsync();
         }
 
         // GET: api/authors/{id}
         [HttpGet("{id:guid}")]
-        public async Task<ActionResult<Author>> GetById(Guid id)
+        public async Task<ActionResult<Author>> GetAuthor(Guid id)
         {
-            var author = await _authors.GetByIdAsync(id);
-            if (author is null) return NotFound();
-            return Ok(author);
-        }
+            var author = await _context.Authors
+                .Include(a => a.Books)
+                .FirstOrDefaultAsync(a => a.Id == id);
 
-        // GET: api/authors/{id}/books
-        [HttpGet("{id:guid}/books")]
-        public async Task<ActionResult<IEnumerable<Book>>> GetBooksByAuthor(Guid id)
-        {
-            var books = await _authors.GetBooksByAuthorAsync(id);
-            return Ok(books);
+            if (author == null)
+                return NotFound();
+
+            return author;
         }
 
         // POST: api/authors
         [HttpPost]
-        public async Task<ActionResult<Author>> Create(Author author)
+        public async Task<ActionResult<Author>> CreateAuthor(Author author)
         {
-            await _authors.AddAsync(author);
-            var saved = await _authors.SaveChangesAsync();
-            if (!saved) return StatusCode(500, "Failed to save author.");
-            return CreatedAtAction(nameof(GetById), new { id = author.Id }, author);
+            _context.Authors.Add(author);
+            await _context.SaveChangesAsync();
+
+            return CreatedAtAction(nameof(GetAuthor), new { id = author.Id }, author);
         }
 
         // PUT: api/authors/{id}
         [HttpPut("{id:guid}")]
-        public async Task<IActionResult> Update(Guid id, Author author)
+        public async Task<IActionResult> UpdateAuthor(Guid id, Author author)
         {
-            if (id != author.Id) return BadRequest();
+            if (id != author.Id)
+                return BadRequest();
 
-            _authors.Update(author);
-            var saved = await _authors.SaveChangesAsync();
-            if (!saved) return StatusCode(500, "Failed to update author.");
+            _context.Entry(author).State = EntityState.Modified;
+
+            try
+            {
+                await _context.SaveChangesAsync();
+            }
+            catch (DbUpdateConcurrencyException)
+            {
+                if (!_context.Authors.Any(a => a.Id == id))
+                    return NotFound();
+                else
+                    throw;
+            }
+
             return NoContent();
         }
 
         // DELETE: api/authors/{id}
         [HttpDelete("{id:guid}")]
-        public async Task<IActionResult> Delete(Guid id)
+        public async Task<IActionResult> DeleteAuthor(Guid id)
         {
-            var author = await _authors.GetByIdAsync(id);
-            if (author is null) return NotFound();
+            var author = await _context.Authors.FindAsync(id);
+            if (author == null)
+                return NotFound();
 
-            _authors.Remove(author);
-            var saved = await _authors.SaveChangesAsync();
-            if (!saved) return StatusCode(500, "Failed to delete author.");
+            _context.Authors.Remove(author);
+            await _context.SaveChangesAsync();
+
             return NoContent();
         }
     }
