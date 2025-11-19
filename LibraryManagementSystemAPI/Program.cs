@@ -4,10 +4,7 @@ using LibraryManagementSystemAPI.Repository.Interface;
 using Microsoft.AspNetCore.Mvc;
 using System.Text.Json.Serialization;
 using Microsoft.EntityFrameworkCore;
-internal class Program
-{
-    private static void Main(string[] args)
-    {
+
         var builder = WebApplication.CreateBuilder(args);
 
       
@@ -55,5 +52,4 @@ internal class Program
         app.MapControllers();
 
         app.Run();
-    }
-}
+    

@@ -798,6 +798,9 @@
             "format": "date-time",
             "nullable": true
           },
+          "isDeleted": {
+            "type": "boolean"
+          },
           "firstName": {
             "maxLength": 100,
             "minLength": 1,
@@ -847,6 +850,9 @@
             "type": "string",
             "format": "date-time",
             "nullable": true
+          },
+          "isDeleted": {
+            "type": "boolean"
           },
           "title": {
             "maxLength": 200,
@@ -898,6 +904,9 @@
             "type": "string",
             "format": "date-time",
             "nullable": true
+          },
+          "isDeleted": {
+            "type": "boolean"
           },
           "name": {
             "maxLength": 100,
