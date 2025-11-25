@@ -4,10 +4,7 @@ using LibraryManagementSystemAPI.Repository.Interface;
 using Microsoft.AspNetCore.Mvc;
 using System.Text.Json.Serialization;
 using Microsoft.EntityFrameworkCore;
-internal class Program
-{
-    private static void Main(string[] args)
-    {
+
         var builder = WebApplication.CreateBuilder(args);
 
       
@@ -15,10 +12,9 @@ internal class Program
             options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
         
-        builder.Services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
-        builder.Services.AddScoped<IBookRepository, BookRepository>();
-        builder.Services.AddScoped<IAuthorRepository, AuthorRepository>();
-        builder.Services.AddScoped<IGenreRepository, GenreRepository>();
+        builder.Services.AddScoped<BookRepository>();
+        builder.Services.AddScoped<AuthorRepository>();
+        builder.Services.AddScoped<GenreRepository>();
 
 
         builder.Services.AddControllers()
@@ -56,5 +52,4 @@ internal class Program
         app.MapControllers();
 
         app.Run();
-    }
-}
+    

@@ -200,86 +200,10 @@
         }
       }
     },
-    "/api/Authors/{id}/books": {
-      "get": {
-        "tags": [
-          "Authors"
-        ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "string",
-              "format": "uuid"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/Book"
-                  }
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/Book"
-                  }
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/Book"
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
-    },
     "/api/Book": {
       "get": {
         "tags": [
           "Book"
-        ],
-        "parameters": [
-          {
-            "name": "page",
-            "in": "query",
-            "schema": {
-              "type": "integer",
-              "format": "int32",
-              "default": 1
-            }
-          },
-          {
-            "name": "pageSize",
-            "in": "query",
-            "schema": {
-              "type": "integer",
-              "format": "int32",
-              "default": 10
-            }
-          },
-          {
-            "name": "search",
-            "in": "query",
-            "schema": {
-              "type": "string"
-            }
-          }
         ],
         "responses": {
           "200": {
@@ -811,55 +735,6 @@
         }
       }
     },
-    "/api/Genre/{id}/books": {
-      "get": {
-        "tags": [
-          "Genre"
-        ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "string",
-              "format": "uuid"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/Book"
-                  }
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/Book"
-                  }
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/Book"
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
-    },
     "/WeatherForecast": {
       "get": {
         "tags": [
@@ -923,6 +798,9 @@
             "format": "date-time",
             "nullable": true
           },
+          "isDeleted": {
+            "type": "boolean"
+          },
           "firstName": {
             "maxLength": 100,
             "minLength": 1,
@@ -972,6 +850,9 @@
             "type": "string",
             "format": "date-time",
             "nullable": true
+          },
+          "isDeleted": {
+            "type": "boolean"
           },
           "title": {
             "maxLength": 200,
@@ -1023,6 +904,9 @@
             "type": "string",
             "format": "date-time",
             "nullable": true
+          },
+          "isDeleted": {
+            "type": "boolean"
           },
           "name": {
             "maxLength": 100,

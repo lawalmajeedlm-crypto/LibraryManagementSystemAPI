@@ -150,7 +150,12 @@
               "RelativeToolTip": "LibraryManagementSystemAPI\\Models\\Book.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+<<<<<<< HEAD
               "WhenOpened": "2025-11-17T09:10:58.241Z"
+=======
+              "WhenOpened": "2025-11-17T09:10:58.241Z",
+              "EditorCaption": ""
+>>>>>>> 752878d382be3dac19bfc98949a159b20c8a892a
             },
             {
               "$type": "Document",
@@ -364,7 +369,11 @@
               "RelativeDocumentMoniker": "LibraryManagementSystemAPI\\Program.cs",
               "ToolTip": "C:\\Users\\HP\\source\\repos\\LibraryManagementSystemAPI\\LibraryManagementSystemAPI\\Program.cs",
               "RelativeToolTip": "LibraryManagementSystemAPI\\Program.cs",
+<<<<<<< HEAD
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA5AAAAAAAAAA==",
+=======
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAmAAAAAAAAAA==",
+>>>>>>> 752878d382be3dac19bfc98949a159b20c8a892a
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-14T08:01:18.536Z",
               "EditorCaption": ""

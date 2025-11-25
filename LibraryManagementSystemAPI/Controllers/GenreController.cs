@@ -1,8 +1,10 @@
-﻿using LibraryManagementSystemAPI.DTO;
+﻿using LibraryManagementSystemAPI.Data;
+using LibraryManagementSystemAPI.DTO;
 using LibraryManagementSystemAPI.Models;
 using LibraryManagementSystemAPI.Repository.Interface;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace LibraryManagementSystemAPI.Controllers
 {
@@ -10,70 +12,81 @@ namespace LibraryManagementSystemAPI.Controllers
     [ApiController]
     public class GenreController : ControllerBase
     {
-        private readonly IGenreRepository _genres;
+        private readonly LibraryContext _context;
 
-        public GenreController(IGenreRepository genres)
+        public GenreController(LibraryContext context)
         {
-            _genres = genres;
+            _context = context;
         }
 
         // GET: api/genres
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Genre>>> GetAll()
+        public async Task<ActionResult<IEnumerable<Genre>>> GetGenres()
         {
-            var genres = await _genres.GetAllAsync();
-            return Ok(genres);
+            return await _context.Genres
+                .Include(g => g.Books)
+                .ToListAsync();
         }
 
         // GET: api/genres/{id}
         [HttpGet("{id:guid}")]
-        public async Task<ActionResult<Genre>> GetById(Guid id)
+        public async Task<ActionResult<Genre>> GetGenre(Guid id)
         {
-            var genre = await _genres.GetByIdAsync(id);
-            if (genre is null) return NotFound();
-            return Ok(genre);
-        }
+            var genre = await _context.Genres
+                .Include(g => g.Books)
+                .FirstOrDefaultAsync(g => g.Id == id);
 
-        // GET: api/genres/{id}/books
-        [HttpGet("{id:guid}/books")]
-        public async Task<ActionResult<IEnumerable<Book>>> GetBooksByGenre(Guid id)
-        {
-            var books = await _genres.GetBooksByGenreAsync(id);
-            return Ok(books);
+            if (genre == null)
+                return NotFound();
+
+            return genre;
         }
 
         // POST: api/genres
         [HttpPost]
-        public async Task<ActionResult<Genre>> Create(Genre genre)
+        public async Task<ActionResult<Genre>> CreateGenre(Genre genre)
         {
-            await _genres.AddAsync(genre);
-            var saved = await _genres.SaveChangesAsync();
-            if (!saved) return StatusCode(500, "Failed to save genre.");
-            return CreatedAtAction(nameof(GetById), new { id = genre.Id }, genre);
+            _context.Genres.Add(genre);
+            await _context.SaveChangesAsync();
+
+            return CreatedAtAction(nameof(GetGenre), new { id = genre.Id }, genre);
         }
 
         // PUT: api/genres/{id}
         [HttpPut("{id:guid}")]
-        public async Task<IActionResult> Update(Guid id, Genre genre)
+        public async Task<IActionResult> UpdateGenre(Guid id, Genre genre)
         {
-            if (id != genre.Id) return BadRequest();
+            if (id != genre.Id)
+                return BadRequest();
 
-            _genres.Update(genre);
-            var saved = await _genres.SaveChangesAsync();
-            if (!saved) return StatusCode(500, "Failed to update genre.");
+            _context.Entry(genre).State = EntityState.Modified;
+
+            try
+            {
+                await _context.SaveChangesAsync();
+            }
+            catch (DbUpdateConcurrencyException)
+            {
+                if (!_context.Genres.Any(g => g.Id == id))
+                    return NotFound();
+                else
+                    throw;
+            }
+
             return NoContent();
         }
 
         // DELETE: api/genres/{id}
         [HttpDelete("{id:guid}")]
-        public async Task<IActionResult> Delete(Guid id)
+        public async Task<IActionResult> DeleteGenre(Guid id)
         {
-            var genre = await _genres.GetByIdAsync(id);
-            if (genre is null) return NotFound();
+            var genre = await _context.Genres.FindAsync(id);
+            if (genre == null)
+                return NotFound();
 
-            _genres.Remove(genre);
-            var saved = await _genres.SaveChangesAsync();
-            if (!saved) return StatusCode(500, "Failed to delete genre.");
+            _context.Genres.Remove(genre);
+            await _context.SaveChangesAsync();
+
             return NoContent();
         }
     }

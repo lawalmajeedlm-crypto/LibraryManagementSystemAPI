@@ -3,10 +3,13 @@
   "WorkspaceRootPath": "C:\\Users\\HP\\source\\repos\\LibraryManagementSystemAPI\\",
   "Documents": [
     {
+<<<<<<< HEAD
       "AbsoluteMoniker": "D:0:0:{9E648B30-4FAA-4569-AF3D-E0F491E4391D}|LibraryManagementSystemAPI\\LibraryManagementSystemAPI.csproj|c:\\users\\hp\\source\\repos\\librarymanagementsystemapi\\librarymanagementsystemapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9E648B30-4FAA-4569-AF3D-E0F491E4391D}|LibraryManagementSystemAPI\\LibraryManagementSystemAPI.csproj|solutionrelative:librarymanagementsystemapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+=======
+>>>>>>> 752878d382be3dac19bfc98949a159b20c8a892a
       "AbsoluteMoniker": "D:0:0:{9E648B30-4FAA-4569-AF3D-E0F491E4391D}|LibraryManagementSystemAPI\\LibraryManagementSystemAPI.csproj|c:\\users\\hp\\source\\repos\\librarymanagementsystemapi\\librarymanagementsystemapi\\models\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9E648B30-4FAA-4569-AF3D-E0F491E4391D}|LibraryManagementSystemAPI\\LibraryManagementSystemAPI.csproj|solutionrelative:librarymanagementsystemapi\\models\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -23,6 +26,13 @@
       "RelativeMoniker": "D:0:0:{9E648B30-4FAA-4569-AF3D-E0F491E4391D}|LibraryManagementSystemAPI\\LibraryManagementSystemAPI.csproj|solutionrelative:librarymanagementsystemapi\\models\\genre.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+<<<<<<< HEAD
+=======
+      "AbsoluteMoniker": "D:0:0:{9E648B30-4FAA-4569-AF3D-E0F491E4391D}|LibraryManagementSystemAPI\\LibraryManagementSystemAPI.csproj|c:\\users\\hp\\source\\repos\\librarymanagementsystemapi\\librarymanagementsystemapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E648B30-4FAA-4569-AF3D-E0F491E4391D}|LibraryManagementSystemAPI\\LibraryManagementSystemAPI.csproj|solutionrelative:librarymanagementsystemapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+>>>>>>> 752878d382be3dac19bfc98949a159b20c8a892a
       "AbsoluteMoniker": "D:0:0:{9E648B30-4FAA-4569-AF3D-E0F491E4391D}|LibraryManagementSystemAPI\\LibraryManagementSystemAPI.csproj|c:\\users\\hp\\source\\repos\\librarymanagementsystemapi\\librarymanagementsystemapi\\repositories\\interface\\igenrerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9E648B30-4FAA-4569-AF3D-E0F491E4391D}|LibraryManagementSystemAPI\\LibraryManagementSystemAPI.csproj|solutionrelative:librarymanagementsystemapi\\repositories\\interface\\igenrerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -86,7 +96,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
+<<<<<<< HEAD
           "SelectedChildIndex": 31,
+=======
+          "SelectedChildIndex": 30,
+>>>>>>> 752878d382be3dac19bfc98949a159b20c8a892a
           "Children": [
             {
               "$type": "Bookmark",
@@ -142,7 +156,11 @@
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 2,
+=======
+              "DocumentIndex": 1,
+>>>>>>> 752878d382be3dac19bfc98949a159b20c8a892a
               "Title": "Book.cs",
               "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\LibraryManagementSystemAPI\\LibraryManagementSystemAPI\\Models\\Book.cs",
               "RelativeDocumentMoniker": "LibraryManagementSystemAPI\\Models\\Book.cs",
@@ -150,7 +168,12 @@
               "RelativeToolTip": "LibraryManagementSystemAPI\\Models\\Book.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+<<<<<<< HEAD
               "WhenOpened": "2025-11-17T09:10:58.241Z"
+=======
+              "WhenOpened": "2025-11-17T09:10:58.241Z",
+              "EditorCaption": ""
+>>>>>>> 752878d382be3dac19bfc98949a159b20c8a892a
             },
             {
               "$type": "Document",
@@ -310,7 +333,11 @@
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 3,
+=======
+              "DocumentIndex": 2,
+>>>>>>> 752878d382be3dac19bfc98949a159b20c8a892a
               "Title": "Author.cs",
               "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\LibraryManagementSystemAPI\\LibraryManagementSystemAPI\\Models\\Author.cs",
               "RelativeDocumentMoniker": "LibraryManagementSystemAPI\\Models\\Author.cs",
@@ -334,7 +361,11 @@
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 4,
+=======
+              "DocumentIndex": 3,
+>>>>>>> 752878d382be3dac19bfc98949a159b20c8a892a
               "Title": "Genre.cs",
               "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\LibraryManagementSystemAPI\\LibraryManagementSystemAPI\\Models\\Genre.cs",
               "RelativeDocumentMoniker": "LibraryManagementSystemAPI\\Models\\Genre.cs",
@@ -346,7 +377,11 @@
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 1,
+=======
+              "DocumentIndex": 0,
+>>>>>>> 752878d382be3dac19bfc98949a159b20c8a892a
               "Title": "BaseEntity.cs",
               "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\LibraryManagementSystemAPI\\LibraryManagementSystemAPI\\Models\\BaseEntity.cs",
               "RelativeDocumentMoniker": "LibraryManagementSystemAPI\\Models\\BaseEntity.cs",
@@ -358,13 +393,21 @@
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 0,
+=======
+              "DocumentIndex": 4,
+>>>>>>> 752878d382be3dac19bfc98949a159b20c8a892a
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\LibraryManagementSystemAPI\\LibraryManagementSystemAPI\\Program.cs",
               "RelativeDocumentMoniker": "LibraryManagementSystemAPI\\Program.cs",
               "ToolTip": "C:\\Users\\HP\\source\\repos\\LibraryManagementSystemAPI\\LibraryManagementSystemAPI\\Program.cs",
               "RelativeToolTip": "LibraryManagementSystemAPI\\Program.cs",
+<<<<<<< HEAD
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA5AAAAAAAAAA==",
+=======
+              "ViewState": "AgIAAB4AAAAAAAAAAAAuwCEAAAAzAAAAAAAAAA==",
+>>>>>>> 752878d382be3dac19bfc98949a159b20c8a892a
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-14T08:01:18.536Z",
               "EditorCaption": ""
